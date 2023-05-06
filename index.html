@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/customStyle.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
     
 </head>
 <body>
@@ -47,84 +51,60 @@
           </div>
         </div>
       </nav>
-    <div class="container">
-      
-      <div class="justify-content-center">
-        <h1 class="text-primary">Bienvenido</h1>
-        <h2>¿Qué quieres aprender hoy?</h2>
-      </div>
-      
-      <div class="row">
-          <div class="col-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil placeat adipisci velit voluptatibus. Ratione amet perferendis iusto, aperiam numquam tempora voluptas soluta mollitia, provident, cum libero asperiores quisquam exercitationem?</p>
-          </div>
-          <div class="col-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil placeat adipisci velit voluptatibus. Ratione amet perferendis iusto, aperiam numquam tempora voluptas soluta mollitia, provident, cum libero asperiores quisquam exercitationem?</p>
-          </div>
-          <div class="col-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil placeat adipisci velit voluptatibus. Ratione amet perferendis iusto, aperiam numquam tempora voluptas soluta mollitia, provident, cum libero asperiores quisquam exercitationem?</p>
-          </div>
-      </div>
-
-      <h1>Hola Mundo!!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia at sint veniam ab. Ad hic vitae iusto quaerat ipsa dolorum suscipit, tempore, corrupti nostrum amet iure, recusandae architecto laboriosam. Quos.</p>
-    
-    </div>
-      <!--Cuadros de contenido con imagen-->
-      <section class="container mt-4 mb-4">
-        <!--Imagen a la izquierda-->
-        <div class="row mb-5">
-            <div class="col-8 mt-5 shadow rounded-4 p-4 me-5">
-                <div class="row">
-                    <div class="col-8">
-                        <!--Contenido-->
-                        <h1>Titulo</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores autem inventore magnam minus, molestias natus nostrum placeat, ratione, repellendus reprehenderit voluptatem. Ad blanditiis ipsam ipsum mollitia, optio quae quis.</p>
-                    </div>
-                    <div class="col-4">
-                        <!--Imagen-->
-                        <img src="#" alt="#">
-                    </div>
+    <!--Navegador-->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bita</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
-            </div>
-            <div class="col-3 mt-5 shadow rounded-4 p-4">
-                <div class="col-8">
-                    <!--Contenido-->
-                    <h1>Titulo</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores autem inventore magnam minus, molestias natus nostrum placeat, ratione, repellendus reprehenderit voluptatem. Ad blanditiis ipsam ipsum mollitia, optio quae quis.</p>
-                </div>
-                <div class="col-4">
-                    <!--Imagen-->
-                    <img src="#" alt="#">
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
-            <div class="col-3 mt-5 shadow rounded-4 p-4 me-5">
-                <div class="col-8">
-                    <!--Contenido-->
-                    <h1>Titulo</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores autem inventore magnam minus, molestias natus nostrum placeat, ratione, repellendus reprehenderit voluptatem. Ad blanditiis ipsam ipsum mollitia, optio quae quis.</p>
-                </div>
-                <div class="col-4">
-                    <!--Imagen-->
-                    <img src="#" alt="#">
-                </div>
-            </div>
-            <div class="col-8 mt-5 shadow rounded-4 p-4">
-                <div class="row">
-                    <div class="col-8">
-                        <!--Contenido-->
-                        <h1>Titulo</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores autem inventore magnam minus, molestias natus nostrum placeat, ratione, repellendus reprehenderit voluptatem. Ad blanditiis ipsam ipsum mollitia, optio quae quis.</p>
-                    </div>
-                    <div class="col-4">
-                        <!--Imagen-->
-                        <img src="#" alt="#">
-                    </div>
-                </div>
 
+        </div>
+    </nav>
+    <!--Carrusel-->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./sources/Carrusel/1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./sources/Carrusel/2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./sources/Carrusel/3.png" class="d-block w-100" alt="...">
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <Section>
         <!--Imagen en la parte superior en tres columas-->
         <div class="row">
             <h1 class="text-center fw-bold">No solo es leer...</h1>
@@ -159,7 +139,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </div>
-    </section>
+    </Section>
     <!--Footer-Pie de pagina-->
     <footer class="bg-dark container-fluid p-5">
         <!--Footer en 3 columnas-->
