@@ -32,72 +32,77 @@
     padding-left: 0.5rem;
     top: 0.2rem;
     left: 270px;
-    animation: openclose 8s ease-in-out infinite;
-}
-@keyframes openclose {
+    animation: openclose 5s ease-in-out infinite;
+  }
+  
+  .word1, .word2, .word3 {
+    font-family: tahoma;
+  }
+  
+  @keyframes openclose {
     0% {
-        top: 0.2rem;
-        width: 0;
+      top: 0.2rem;
+      width: 0;
     }
     5% {
-        width: 0;
+      width: 0;
     }
     15% {
-        width: 230px;
+      width: 230px;
     }
     30% {
-        top: 0.2rem;
-        width: 230px;
+      top: 0.2rem;
+      width: 230px;
     }
     33% {
-        top: 0.2rem;
-        width: 0;
+      top: 0.2rem;
+      width: 0;
     }
     35% {
-        top: 0.2rem;
-        width: 0;
+      top: 0.2rem;
+      width: 0;
     }
     38% {
-        top: -4.5rem;
-
+      top: -4.5rem;
+      
     }
     48% {
-        top: -4.5rem;
-        width: 190px;
+      top: -4.5rem;
+      width: 190px;
     }
     62% {
-        top: -4.5rem;
-        width: 190px;
+      top: -4.5rem;
+      width: 190px;
     }
     66% {
-        top: -4.5rem;
-        width: 0;
-        text-indent: 0;
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
     }
     71% {
-        top: -9rem;
-        width: 0;
-        text-indent: 5px;
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
     }
     86% {
-        top: -9rem;
-        width: 285px;
+      top: -9rem;
+      width: 285px;
     }
     95% {
-        top: -9rem;
-        width: 285px;
+      top: -9rem;
+      width: 285px;
     }
     98% {
-        top: -9rem;
-        width: 0;
-        text-indent: 5px;
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
     }
     100% {
-        top: 0;
-        width: 0;
-        text-indent: 0;
+      top: 0;
+      width: 0;
+      text-indent: 0;
     }
-}
+  }
 
 .text-align-center {
     height: 100px;
@@ -110,4 +115,40 @@
     text-align: center;
     vertical-align: middle;
   }
+  .title-word {
+    animation: color-animation 4s linear infinite;
+  }
   
+  .title-word-1 {
+    --color-1: #DF8453;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  .title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+  }
+  
+  .title-word-4 {
+    --color-1: #3D8DAE;
+    --color-2: #DF8453;
+    --color-3: #E4A9A8;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
