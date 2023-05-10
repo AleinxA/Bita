@@ -16,10 +16,10 @@
 </head>
 <body>
 <?php
-include './pagesTemplates/nav.php';
+include './pagesTemplate/nav.php';
 ?>
 <?php
-include './pagesTemplates/footer.php';
+include './pagesTemplate/footer.php';
 ?>
 </body>
 </html>
