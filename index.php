@@ -10,9 +10,12 @@
     ?>
 </head>
 <body>
+<!--Nav-->
 <?php
 include './pagesTemplate/nav.php';
 ?>
+
+<!--Footer-->
 <?php
 include './pagesTemplate/footer.php';
 ?>
