@@ -14,6 +14,7 @@
     <?php
     include('./pagesTemplate/nav.php');
     ?>
+    
     <?php
     include('./pagesTemplate/footer.php');
     ?>
