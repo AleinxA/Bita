@@ -18,60 +18,34 @@
 </head>
 <body>
     <!--Navegador-->
-    <nav class="navbar">
+    
+    <nav class="navbar bg-body-tertiary" style="background-color: #e3f2fd;">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
                 <img src="./images/logoBita.png" alt="Logo" height="50rem" style="margin: 0 auto; display: block;"> 
             </a>
-            <button class="navbar-toggler btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="bi bi-menu-button" style="font-size: 2rem;"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body ">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 list-group-horizontal">
-                        <li class="nav-item col-6 m-2 rounded-end-2 text-center shadow-sm">
-                            <i class="bi bi-list-stars icons-navSize"></i>
-                            <a class="nav-link" href="./catalogo.html">Todos los libros</a>
-                        </li>
-                        <li class="nav-item col-6 m-2 rounded-2 text-center shadow-sm">
-                            <i class="bi bi-card-list icons-navSize"></i>
-                            <a class="nav-link" href="./categories.html">Categorias</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control form-control-lg me-2" type="search" placeholder="Quiero leer..." aria-label="search">
-                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
-                    </form>
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 list-group-horizontal mt-3">
-                        <li class="nav-item col-6 m-2 rounded-end-2 text-center shadow-sm">
-                            <i class="bi bi-person icons-navSize"></i>
-                            <a class="nav-link" href="./login.html">Ingresar</a>
-                        </li>
-                        <li class="nav-item col-6 m-2 rounded-2 text-center shadow-sm">
-                            <i class="bi bi-person-plus icons-navSize"></i>
-                            <a class="nav-link" href="./register.html">Registrarse</a>
-                        </li>
-                        
-                    </ul>
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 list-group-horizontal mt-3">
-                        <li class="nav-item col-6 m-2 rounded-end-2 text-center shadow-sm">
-                            <i class="bi bi-chat-right-dots icons-navSize"></i>
-                            <a class="nav-link" href="./postPage.html">Sugerencias</a>
-                        </li>
-                        <li class="nav-item col-6 m-2 rounded-2 text-center shadow-sm">
-                            <i class="bi bi-envelope icons-navSize"></i>
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./catalogo.html">Libros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./categories.html">Categorias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./login.html">Ingresar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./postPage.html">Sugerencias</a>
+                  </li>
+              </ul>
+            
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-    </nav>
+      </nav>
+      
     <!--Carrusel-->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
