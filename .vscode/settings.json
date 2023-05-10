@@ -5,7 +5,7 @@
     "git.enableSmartCommit": true,
     "php.validate.executablePath": "C:/php/php.exe",
     "workbench.colorTheme": "Visual Studio Dark",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vscode-icons",
     "workbench.preferredDarkColorTheme": "Solarized Dark",
     "liveServer.settings.donotShowInfoMsg": true
 }
