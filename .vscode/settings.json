@@ -4,8 +4,8 @@
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
     "php.validate.executablePath": "C:/php/php.exe",
-    "workbench.colorTheme": "Solarized Dark",
-    "workbench.iconTheme": "vs-minimal",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.preferredDarkColorTheme": "Solarized Dark",
     "liveServer.settings.donotShowInfoMsg": true
 }

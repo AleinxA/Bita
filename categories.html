@@ -9,6 +9,23 @@
         <link rel="stylesheet" href="./src/icons/bootstrap-icons.css">
         <link rel="stylesheet" href="./css/customStyle.css">
         <script src="./js/bootstrap.min.js"></script>
+       
+        <title>Colapsable en HTML</title>
+        <style>
+          .contenido {
+            display: none;
+          }
+        </style>
+        <script>
+          function toggleContenido(contenido) {
+            var secciones = document.querySelectorAll(".contenido");
+            for (var i = 0; i < secciones.length; i++) {
+              secciones[i].style.display = "none";
+            }
+            document.getElementById(contenido).style.display = "block";
+          }
+
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -44,95 +61,75 @@
       </nav>
       
     <!--Categorias-->
-    <section class="mt-4 mb-4 row container-fluid justify-content-center">
-        <h1 class="text-center">Bienvenido a la Seccion de Categorias</h1> 
-        <div class="col-4 mt-4 mb-4">
-            <ul class="list-group">
-                <li class="list-group-item">Matematicas</li>
-                <li class="list-group-item">Comunicacion</li>
-                <li class="list-group-item">Lenguaje</li>
-                <li class="list-group-item">Ciencia</li>
-                <li class="list-group-item">Ambiente</li>
-                <li class="list-group-item">Carpinteria</li>
-                <li class="list-group-item">Arte</li>
-            </ul>
-        </div>
 
-        <div class="col-7 mt-4 mb-4 row justify-content-center">
-            <div class="card shadow-sm col-3 mb-2 me-2" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card shadow-sm col-3 mb-2 me-2" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card shadow-sm col-3 mb-2" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card shadow-sm col-3 mb-2 me-2" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card shadow-sm col-3 mb-2 me-2" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card shadow-sm col-3 mb-2" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card shadow-sm col-3 me-2" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card shadow-sm col-3 me-2" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card shadow-sm col-3" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+    <h1 class="text-center">Bienvenido a la seccion de Categorias</h1>
+    <button onclick="toggleContenido('seccion1')">Matematicas</button>
+    <button onclick="toggleContenido('seccion2')">Comunicacion</button>
+    <button onclick="toggleContenido('seccion3')">Artes Visuales</button>
+    <div id="seccion1" class="contenido">
+      <div class="row justify-content-center">
+        <h1 class="text-center fw-bold">Matematica</h1>
+        <div class="shadow-sm rounded-4 p-4 mt-4 col-3 m-4">
+            <img src="#" alt="#">
+            <h2 class="fw-bold text-center">introduccion al algebra</h2>
+            <p>autor: gonzales</p>
         </div>
-    </section>
+        <div class="shadow-sm rounded-4 p-4 mt-4 col-3 m-4">
+            <img src="#" alt="#">
+            <h2 class="fw-bold text-center">Artimetica</h2>
+            <p>Autor: Diegue</p>
+        </div>
+        <div class="shadow-sm rounded-4 p-4 mt-4 col-3 m-4">
+            <img src="#" alt="#">
+            <h2 class="text-center fw-bold">Geometria</h2>
+            <p>Autor: angela</p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div id="seccion2" class="contenido">
+      <div class="row justify-content-center">
+        <h1 class="text-center fw-bold">Comunicacion</h1>
+        <div class="shadow-sm rounded-4 p-4 mt-4 col-3 m-4">
+            <img src="#" alt="#">
+            <h2 class="fw-bold text-center">introduccion al algebra</h2>
+            <p>autor: gonzales</p>
+        </div>
+        <div class="shadow-sm rounded-4 p-4 mt-4 col-3 m-4">
+            <img src="#" alt="#">
+            <h2 class="fw-bold text-center">Artimetica</h2>
+            <p>Autor: Diegue</p>
+        </div>
+        <div class="shadow-sm rounded-4 p-4 mt-4 col-3 m-4">
+            <img src="#" alt="#">
+            <h2 class="text-center fw-bold">Geometria</h2>
+            <p>Autor: angela</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="seccion3" class="contenido">
+        <div class="row justify-content-center">
+        <h1 class="text-center fw-bold">Artes Visuales</h1>
+        <div class="shadow-sm rounded-4 p-4 mt-4 col-3 m-4">
+            <img src="#" alt="#">
+            <h2 class="fw-bold text-center">introduccion al algebra</h2>
+            <p>autor: gonzales</p>
+        </div>
+        <div class="shadow-sm rounded-4 p-4 mt-4 col-3 m-4">
+            <img src="#" alt="#">
+            <h2 class="fw-bold text-center">Artimetica</h2>
+            <p>Autor: Diegue</p>
+        </div>
+        <div class="shadow-sm rounded-4 p-4 mt-4 col-3 m-4">
+            <img src="#" alt="#">
+            <h2 class="text-center fw-bold">Geometria</h2>
+            <p>Autor: angela</p>
+        </div>
+      </div>
+    </div>
+
     <!--Footer-Pie de pagina-->
     <footer class="bg-dark p-5">
         <!--Footer en 3 columnas-->
