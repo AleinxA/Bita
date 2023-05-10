@@ -152,3 +152,9 @@
     99%   {color: var(--color-3)}
     100%  {color: var(--color-1)}
   }
+  .bgLogin{
+    background: scroll;
+    background-image: url(../images/login_bg.jpg);
+    background-size: 100%;
+    background-position: center;
+  }
